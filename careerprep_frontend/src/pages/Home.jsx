@@ -1,5 +1,5 @@
 import React from "react";
-import FeatureCard from "./FeatureCard";
+import FeatureCard from "../components/FeatureCard";
 import { useNavigate } from "react-router-dom";
 
 function Home() {
@@ -42,17 +42,15 @@ function Home() {
           title="Skill Gap Analysis"
           desc="Identify missing skills for your dream role and get personalized learning resources."
           buttonText="Analyze Skills"
-          onClick={() =>
-            alert("Skill Gap Analysis - Feature Under Development")
-          }
+          onClick={() => navigate("/skill-gap")}
         />
         <FeatureCard
-          color="#DC2626"
+          color="#dc6f26"
           icon="🛤️"
           title="Career Path Recommender"
           desc="Discover new career paths that align with your skills and interests and see the steps to get there."
           buttonText="Explore Paths"
-          onClick={() => alert("Career Path Recommender - Explore Now")}
+          onClick={() => navigate("/career-path")}
         />
       </div>
     </div>
