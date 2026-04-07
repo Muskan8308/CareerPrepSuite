@@ -43,6 +43,7 @@ function SkillGapAnalyzer() {
         minHeight: "100vh",
         minWidth: "100vh",
         padding: "2rem",
+        margin : "2rem 6rem",
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
